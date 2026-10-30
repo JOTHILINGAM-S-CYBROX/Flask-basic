@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Jothilingam S</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 18px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        .certificate {
+            background: white;
+            padding: 22px;
+            margin: 15px 0;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+        }
+
+        .certificate h3 {
+            margin-top: 0;
+        }
+
+        .certificate p {
+            color: #64748b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media(max-width:650px) {
+            nav {
+                justify-content: center;
+            }
+
+            .logo {
+                width: 100%;
+                text-align: center;
+            }
+
+            .links {
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">JOTHILINGAM.</div>
+        <div class="links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Certifications</h1>
+
+        <div class="certificate">
+            <h3>Cloud Computing</h3>
+            <p>NPTEL | April 2024</p>
+        </div>
+
+        <div class="certificate">
+            <h3>Python 3.4.3 Training</h3>
+            <p>Spoken Tutorial Project, IIT Bombay | May 2024</p>
+        </div>
+
+        <div class="certificate">
+            <h3>ChatGPT Prompt Engineering for Developers</h3>
+            <p>DeepLearning.AI | 2024</p>
+        </div>
+
+        <h1>Courses & Workshops</h1>
+
+        <div class="certificate">
+            <h3>ChatGPT Prompt Engineering for Developers</h3>
+            <p>DeepLearning.AI | 2024</p>
+        </div>
+
+        <div class="certificate">
+            <h3>Tech Trek: A Journey through Full-Stack Development to Industry Mastery</h3>
+            <p>Online Workshop | One Day | 2024</p>
+        </div>
+    </main>
+
+    <footer>© 2026 Jothilingam S</footer>
+</body>
+
+</html>
